@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background */
+}
+
+.banner {
+  background-color: #3498db; /* Blue background color */
+  color: #fff; /* White text color */
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.running-line {
+  animation: runningLine 19s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes runningLine {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1; /* Ensure the container is above the overlay */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.intro {
+  flex: 1 1 auto;
+}
+
+.profile {
+  flex: 0 0 auto;
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.summary, .experience, .education {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul ul {
+  margin-top: 5px;
+}
+
+ul ul li {
+  margin-left: 20px;
+}
+.language-button {
+  text-align: center;
+}
+
+.language-button button {
+  background-color: #3498db; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.language-button button:hover {
+  background-color: blue;
+  color: white;
+}
