@@ -1,2 +1,0 @@
-# js
-A JavaScript project
